@@ -1,15 +1,15 @@
 package np.com.kcsajan.ioc;
 
-public class Car implements Engine {
-	String color;
+public class Car {
+	Engine engine;
 
-	public Car(String color) {
-		System.out.println("Car constructor called.");
-		this.color = color;
+	public Car(Engine engine) {
+		System.out.println("I'm Car Engine Constructor.");
+		this.engine = engine;
 	}
 
-	@Override
-	public void start() {
-		System.out.println("Car started");
+	public void startEngine() {
+		System.out.println("Car Engine Started...");
 	}
+
 }

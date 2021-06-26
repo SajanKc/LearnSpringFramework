@@ -1,23 +1,15 @@
 package np.com.kcsajan.ioc;
 
-public class Bike implements Engine {
+public class Bike {
 
-	String model;
+	Engine engine;
 
-	public void setModel(String model) {
-		this.model = model;
+	public Bike(Engine engine) {
+		this.engine = engine;
+		System.out.println("I'm Bike Engine Constructor.");
 	}
 
-	public String getModel() {
-		return model;
-	}
-	
-	public Bike() {
-		System.out.println("Bike constructor called.");
-	}
-
-	@Override
-	public void start() {
-		System.out.println("Bike started");
+	public void startEngine() {
+		System.out.println("Bike Engine Started...");
 	}
 }

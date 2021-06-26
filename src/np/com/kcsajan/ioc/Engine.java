@@ -1,5 +1,11 @@
 package np.com.kcsajan.ioc;
 
-public interface Engine {
-	void start();
+public class Engine {
+	
+	public Engine() {
+		System.out.println("I'm Engine.");
+	}
+	void start() {
+		System.out.println("Main Engine Started!!!");
+	}
 }
